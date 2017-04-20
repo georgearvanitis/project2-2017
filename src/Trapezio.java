@@ -6,7 +6,8 @@ public class Trapezio extends Shape {
     private  double  basi_megali;
     private  double  height;
 
-    public Trapezio(double basi_mikri, double basi_megali, double height) {
+    public Trapezio(String description,double basi_mikri, double basi_megali, double height) {
+        super(description);
         this.basi_mikri = basi_mikri;
         this.basi_megali = basi_megali;
         this.height = height;
@@ -38,12 +39,12 @@ public class Trapezio extends Shape {
 
     @Override
     public String toString() {
-        return "Trapezio{" +
-                "basi_mikri=" + basi_mikri +
-                ", basi_megali=" + basi_megali +
-                ", height=" + height +
-                "\n emavado= " +computeEmvado()+
-                '}';
+        return  getDescription() +
+                " \n basi_mikri=" + basi_mikri +
+                " \n basi_megali=" + basi_megali +
+                " \n height=" + height +
+                " \n emavado= " +computeEmvado()+
+                "\n....................\n";
     }
 
     public double computeEmvado() {

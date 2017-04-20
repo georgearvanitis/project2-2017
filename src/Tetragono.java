@@ -5,7 +5,8 @@ public class Tetragono extends Shape {
 
     private  double plevra;
 
-    public Tetragono(double plevra) {
+    public Tetragono(String description ,double plevra) {
+        super(description);
         this.plevra = plevra;
     }
 
@@ -19,10 +20,10 @@ public class Tetragono extends Shape {
 
     @Override
     public String toString() {
-        return "Tetragono{" +
+        return getDescription() +
                 "\n plevra=" + plevra +
                 "\n emavado= " +computeEmvado()+
-                '}';
+                "\n....................\n";
     }
 
     @Override

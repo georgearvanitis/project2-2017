@@ -4,7 +4,8 @@
 public class Cyclos  extends Shape{
     private double aktina;
 
-    public Cyclos(double aktina) {
+    public Cyclos(String description,double aktina) {
+        super(description);
         this.aktina=aktina;
     }
 
@@ -23,9 +24,9 @@ public class Cyclos  extends Shape{
 
     @Override
     public String toString() {
-        return "Cyclos{" +
+        return getDescription() +
                 "\n aktina=" + aktina +
                 "\n emavado= " +computeEmvado()+
-                '}';
+                "\n....................\n";
     }
 }

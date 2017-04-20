@@ -6,7 +6,8 @@ public class Orthogonio extends Shape {
     private  double mikos;
     private double platos;
 
-    public Orthogonio(double mikos, double platos) {
+    public Orthogonio(String description,double mikos, double platos) {
+        super(description);
         this.mikos = mikos;
         this.platos = platos;
     }
@@ -25,11 +26,11 @@ public class Orthogonio extends Shape {
 
     @Override
     public String  toString() {
-        return "Orthogonio{" +
+        return getDescription() +
                 " \n mikos= " + mikos +
                 "\n platos=" + platos +
                 "\n emavado= " +computeEmvado()+
-                '}';
+                "\n....................\n";
     }
 
     public void setPlatos(double platos) {

@@ -4,10 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Tetragono t1=new Tetragono(5);
-        Orthogonio o1=new Orthogonio(10,20);
-        Trapezio tr1 =new Trapezio(10.0,5.0,20.0);
-        Cyclos c1= new  Cyclos(10.0);
+        Tetragono t1=new Tetragono("Tetragono",5);
+        Orthogonio o1=new Orthogonio("Orthogonio",10,20);
+        Trapezio tr1 =new Trapezio("Trapezio",10.0,5.0,20.0);
+        Cyclos c1= new  Cyclos("Kyklos",10.0);
 
         String[] sximata =new String[4];
 
