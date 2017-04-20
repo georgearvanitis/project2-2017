@@ -10,6 +10,8 @@ public abstract class Shape extends DescriptorOfShapes {
     public Shape() {
     }
 
+
+
     public abstract double computeEmvado();
     public abstract String toString();
 }

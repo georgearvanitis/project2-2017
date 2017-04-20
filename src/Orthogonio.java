@@ -38,7 +38,7 @@ public class Orthogonio extends Shape {
     }
 
     public double computeEmvado(){
-
+//gg
         double result =0;
         result=getMikos()*getPlatos();
         return  result;
